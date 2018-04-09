@@ -6,27 +6,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            $('.cell').click(function(){
-                //$(this).css('background-color', 'black');
-                /*
-                 $(this).css({
-                     'background-color': 'black',
-                     'color': 'white'
-                 });
-                 */
-                if ($(this).hasClass('cell-dark')){
-                    $(this).removeClass('cell-dark');
-                }
-                else {
-                    $(this).addClass('cell-dark');
-                }
-            });
-            $('#btn').click(function(){
-                $('.table .row').eq(0).find('.cell').eq(1).css({
-                    'background-color': 'red'
+            $('p').click(function(){
+                $(this).hide();
                 });
+                    $('#btn').click(function(){
+                    $('.cell').text('Tekstas');
             });
         });
+
     </script>
     <style>
         .table { display: table }
@@ -49,14 +36,22 @@
 <body>
 <div class="table"> <!-- tas pats kaip table tagas -->
     <div class="row"> <!-- tas pats kaip tr tagas -->
-        <div class="cell">a1</div> <!-- tas pats kaip td tagas -->
-        <div class="cell">b1</div>
+        <div class="cell"><p>a1</p></div> <!-- tas pats kaip td tagas -->
+        <div class="cell"><p>a2</p></div>
+        <div class="cell"><p>a3</p></div>
+    </div>
+    </div>
+        <div class="row"> <!-- tas pats kaip tr tagas -->
+        <div class="cell"><p>b1</p></div> <!-- tas pats kaip td tagas -->
+        <div class="cell"><p>b2</p></div>
+            <div class="cell"><p>b3</p></div>
     </div>
     <div class="row"> <!-- tas pats kaip tr tagas -->
-        <div class="cell">a1</div> <!-- tas pats kaip td tagas -->
-        <div class="cell">b1</div>
+        <div class="cell"><p>c1</p></div> <!-- tas pats kaip td tagas -->
+        <div class="cell"><p>c2</p></div>
+        <div class="cell"><p>c3</p></div>
     </div>
 </div>
-<button id="btn">1-1 raudonas pagrindas</button>
+<button id="btn">Patalpinti teksta</button>
 </body>
 </html>
