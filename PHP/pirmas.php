@@ -37,7 +37,7 @@ echo $z;       // prideda 1
 
 $n = $x++;
 echo '<br>';
-echo $n;         // padaro kaip buvo
+echo $n;         // $n padaro kaip $x ir prie $x prideda 1
 
 echo '<br>';
 echo 1.2e-2 . ' <br> '; // 1.2 * 10^(-2)
