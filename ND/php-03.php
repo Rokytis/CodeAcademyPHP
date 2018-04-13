@@ -1,12 +1,6 @@
 <?php
 
-$m = [
-    'Elementas1' => 1,
-    'Elementas2' => 2,
-    'Elementas3' => 3,
-    'Elementas4' => 4,
-    'Elementas5' => 5,
-];
+$m = [1, 2, 6, 8, 10];
 
 var_dump($m);
 
