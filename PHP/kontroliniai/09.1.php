@@ -12,27 +12,24 @@ class automobilis {
         $this->mod = $md;
         $this->met = $mt;
     }
-    function getinfo(){
+    function duomenys(){
         $s = "Automobilis: %s %s <br> Metai: %s";
         echo sprintf($s, $this->gam, $this->mod, $this->met) . '<br>'; // paima savybes kur yra virsuj
     }
 }
 class lengvasis extends automobilis {
-    function f(){
-        echo $this->title . '(perrasytas)<br>';
+    function duomenys(){
+        $s = "Lengvasis automobilis: %s %s <br> Metai: %s";
+        echo sprintf($s, $this->gam, $this->mod, $this->met) . '<br>';
     }
-    function g(){
-        echo 'Labas<br>';
-    }
-    function h(){
-        parent::f(); //pakviecia funkcija dar aukstesne uz g, tai
-    }               // yra f
 }
-
-
-$o = new automobilis('VW', 'Passat', 1998);
-$o->getinfo();
-$o = new automobilis('Audi', 'A3', 1999);
-$o->getinfo();
-$o = new automobilis('Skoda', 'Octavia', '2007');
-$o->getinfo();
+class krovininis extends automobilis {
+    function duomenys(){
+        $s = "Krovininis automobilis: %s %s <br> Metai: %s";
+        echo sprintf($s, $this->gam, $this->mod, $this->met) . '<br>';
+    }
+}
+$o = new lengvasis('Audi', 'A3', 1999);
+$o->duomenys();
+$o = new krovininis('VW', 'Passat', 1998);
+$o->duomenys();

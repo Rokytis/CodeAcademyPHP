@@ -3,7 +3,8 @@
 class imone {
     public $pav;
     public $kodas;
-    private $sar = [];
+    //private $sar = [];
+    public $sar = [];
     function __construct($p, $k){
         $this->pav = $p;
         $this->pav = $k;
@@ -34,4 +35,4 @@ $o->darb('Jonas', 'Jonaitis', 'direktorius');
 $o->darb('Petras', 'Petraitis', 'vadybininkas');
 $o->darb('Antanas', 'Antanaitis', 'darbininkas');
 $o->getInfo();
-//var_dump($o->sar); // neleidzia nes private
+var_dump($o->sar); // neleidzia nes private
