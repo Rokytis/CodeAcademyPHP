@@ -31,4 +31,4 @@ class forma {
 }
 $o = new forma('asmenys.txt');
 $o->add();
-$o->info();
+$o->info();  // PATAISYT
