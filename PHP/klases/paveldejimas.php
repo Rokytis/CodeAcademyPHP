@@ -2,10 +2,10 @@
 
 class a {
     public $title = 'abc'; //private - neleidzia paveldet
-                          //protected - leidia paveldet
+    //protected - leidia paveldet
     /* final */ function f(){       //final uzdraudzia perrasyti
-        echo $this->title . '<br>';
-    }
+    echo $this->title . '<br>';
+}
 }
 $o = new a();
 $o->f();

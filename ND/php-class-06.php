@@ -7,13 +7,13 @@ class prekes {
     public $sarasas =[];
     function add($p, $ka, $ki){
         $this->sarasas[] = [
-            'pav' => $p,
-            'kai' => $ka,
-            'kie' => $ki
+            'Pavadinimas' => $p,
+            'Kaina' => $ka,
+            'Kiekis' => $ki
         ];
         usort($this->sarasas, function($a, $b){
-           if ($a['kai']>$b['kai']) return 1;
-           elseif ($a['kai']<$b['kai']) return -1;
+           if ($a['Kaina']>$b['Kaina']) return 1;
+           elseif ($a['Kaina']<$b['Kaina']) return -1;
            else return 0;
         });
     }

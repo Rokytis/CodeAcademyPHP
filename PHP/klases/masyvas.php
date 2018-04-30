@@ -7,7 +7,7 @@ class imone {
     public $sar = [];
     function __construct($p, $k){
         $this->pav = $p;
-        $this->pav = $k;
+        $this->kodas = $k;
     }
     function darb($vr, $pv, $pr){
         $this->sar[] = [
