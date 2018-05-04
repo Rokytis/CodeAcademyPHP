@@ -7,6 +7,8 @@ var_dump($_POST);
 echo '<a href="php-form-class-01.html">Atgal</a>';
 */               // jei nereikia kaupti skirtingu sveciu duomenis
 
+//session_unset();   //jei nori panaikint formoje buvusius
+session_start();
 class preforma
 {
     function add()
@@ -19,9 +21,9 @@ class forma extends preforma {
         echo '<table>';
         foreach ($_SESSION['sarasas'] as $svec) {
             echo '<tr>';
-            echo '<td>' . 'Vardas: ' .  $svec['Vardas'] . '</td>';
-            echo '<td>' . 'Pavarde: ' .$svec['Pavarde'] . '</td>';
-            echo '<td>' . 'Patiekalas: ' .$svec['Patiekalas'] . '</td>';
+            echo '<td>' . $svec['Vardas'] . '</td>';
+            echo '<td>' . $svec['Pavarde'] . '</td>';
+            echo '<td>' . $svec['Patiekalas'] . '</td>';
             echo '</tr>';
         }
         echo '</table>';

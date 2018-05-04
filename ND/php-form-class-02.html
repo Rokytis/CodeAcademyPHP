@@ -1,0 +1,32 @@
+<!--
+Sukurti GET formą, kuri leistų įvesti automobilio duomenis: gamintojas, modelis, kuro rūšis (iš sąrašo), daužta/nedaužta (radio), metai, kaina. Sukurti formos backend, kuris priimtų formos duomenis ir įrašytų į masyvą, kuris yra sesijoje. Išvesti visus sesijoje esančio masyvo duomenis apie automobilius lentele. Įdėti nuorodą į formą, kad būtų galima grižti ir įvesti naują automobilį. Backend suprogramuoti naudojant class.
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get" action="php-form-class-02.php">
+    <h1>Automobilio duomenys</h1>
+    <label>Gamintojas</label><input type="text" name="Gam"><br>
+    <label>Modelis</label><input type="text" name="Mod"><br>
+    <label>Kuras</label>
+    <select name="kuras">
+        <option value="Benzinas">Benzinas</option>
+        <option value="Dyzelinas">Dyzelinas</option>
+        <option value="Benzinas/dujos">Benzinas/dujos</option>
+        <option value="Elektra">Elektra</option>
+    </select>
+    <br>
+    <label>Būklė: </label>
+    <label>Daužta</label><input type="radio" name="Būklė" value="Daužta">
+    <label>Nedaužta</label><input type="radio" name="Būklė" value="Nedaužta"><br>
+    <label>Metai</label><input type="number" name="metai"><br>
+    <label>Kaina</label><input type="number" name="kaina"><br>
+    <input type="submit" value="Pateikti">
+</form>
+</body>
+</html>
+

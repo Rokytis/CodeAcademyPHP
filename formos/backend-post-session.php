@@ -5,7 +5,6 @@ $_SESSION['sarasas'][] = $_POST;
 //var_dump($_SESSION); //visus formoje sukaupia Petras, Jonas...
 
 //session_unset();   //jei nori panaikint formoje buvusius
-
 //session_destroy(); //jei nori panaikint formoje buvusius
 
 class preforma
