@@ -5,7 +5,11 @@ Tekstinio redaktoriaus pagalba sukurti failą su teleloto skaičiais (5 x 5). Pa
 $f = fopen('Failai/failas2.txt', r);
 $s = fread($f, filesize('Failai/failas2.txt'));
 fclose($f);
-$m = json_decode($s);
-echo '<table>';
-foreach
+
+$m = explode('\r\n', $s);
+
+for($i=0; $i<count($m); $i++){
+    $m[$i] = explode
+}
+var_dump($m);
 // UZBAIK !!!!!!!!!!!!!
