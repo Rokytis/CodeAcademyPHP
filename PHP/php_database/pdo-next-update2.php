@@ -6,11 +6,10 @@ try { // klaidas randa
     $cnn = new PDO('mysql:host=localhost;dbname=rokas', 'rokas', 'IsmokKodint333'); // rysys su db atidaromas
     $cnn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // allow exceptions
 
-    $res = $cnn->query("select aut_gamintojas as g, aut_modelis as m, aut_metai as mm, aut_kaina as k  from aut order by aut_kaina");
+    $res = $cnn->prepare("update aut set aut_metai=:met, aut_modelis=:mod where aut_id=:id"); //updatina
+    $res->execute([':mod' => 'Fabia', ':met' => '2010', ':id' => 7]);
+    echo 'ok';
 
-    while ($row = $res->fetch()) {
-        echo $row['g'] . ' ' . $row['m'] . ' ' . $row['mm'] . ' ' . $row['k'] . '<br>';
-    }
 }
 catch(PDOException $e) {
     echo $e->getMessage(); //klaidas randa
