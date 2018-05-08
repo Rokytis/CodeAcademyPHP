@@ -1,0 +1,21 @@
+<!--
+Sukurkite HTML dokumentą su įvedimo formą. Forma turėtu turėti laukus : 3x tekstiniai laukai: Šalies pavadinimas, sostinės pavadinimas, gyventojų skaičius, 1x radio pasirinkimas: Šalies tipas vakarų, rytų. Forma turėtu būti nusiųsta į 12.2-backend.php failą metodu POST. Duomenis patalpinkite į duomenų bazę. Duomenų bazės turinį atvaizduoti lentele (pirmas tris didžiausias šalis). Backend'e įdėti nuorodą gražinimui į formą.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="12.2-backend.php">
+    <label>Salies pavadinimas</label><input type="text" name="pav"><br>
+    <label>Sostines pavadinimas</label><input type="text" name="sos"><br>
+    <label>Gyventoju skaicius</label><input type="number" name="sk"><br>
+    <label>Salies tipas:</label><br>
+    <label>Vakarai</label><input type="radio" name="tipas" value="vakarai">
+    <label>Rytai</label><input type="radio" name="tipas" value="rytai">
+    <input type="submit" value="Siusti">
+</form>
+</body>
+</html>
