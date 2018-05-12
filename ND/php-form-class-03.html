@@ -1,0 +1,29 @@
+<!--
+Sukurti formą + php (viename faile - nereikia nurodyti formoje action), kuriame sukurti individualios veiklos mokesčių skaičiuoklę pagal https://www.tax.lt/skaiciuokles/individualios_veiklos_mokesciu_skaiciuokle (tik už 2018 metus).
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get" action="php-form-class-03.php">
+    <h1>INDIVIDUALIOS VEIKLOS MOKESČIŲ SKAIČIUOKLĖ (2018 m.)</h1>
+    <label>Gautos pajamos </label><input type="number" name="pajamos"><br>
+    <label>Patirtos sąnaudos </label><input type="number" name="sanaudos"><br>
+    <label>Sumokėtas PSD </label><input type="number" name="PSD"><br>
+    <label>Sumokėtas VSD </label><input type="number" name="VSD"><br>
+    <label>Sąnaudų skaičiavimas:</label><br>
+    <label>Faktiškai patirtos</label><input type="radio" name="Sąnaudų skaičiavimas" value="patirtos">
+    <label>30% nuo pajamų</label><input type="radio" name="Sąnaudų skaičiavimas" value="30proc"><br>
+    <label>Papildomas pensijos kaupimas:<br>
+        2015 m. 1%<br>
+        nuo 2016 m. 2%<br>
+        <label>Nekaupiama</label><input type="radio" name="pensijos" value="Nekaupiama">
+    <label>Kaupiama</label><input type="radio" name="pensijos" value="Kaupiama"><br>
+    <input type="submit" value="Pateikti">
+</form>
+</body>
+</html>
+<!-- NEREIKALINGA   -->
