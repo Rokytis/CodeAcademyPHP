@@ -23,3 +23,4 @@ $o = new automobilis('Audi', 'A3', 1999);
 $o->getinfo();
 $o = new automobilis('Skoda', 'Octavia', '2007');
 $o->getinfo();
+//PATAISYT

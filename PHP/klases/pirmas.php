@@ -10,5 +10,5 @@ $o = new asmuo();  // sukurem klases objekta
 var_dump($o);
 echo $o->vardas . ' ' . $o->pavarde; // apjunge
 echo '<br>';
-echo $o->atlyginimas; // negalima private informacijos isvest
+//echo $o->atlyginimas; // negalima private informacijos isvest
 
