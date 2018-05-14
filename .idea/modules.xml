@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeAcademyPHP.iml" filepath="$PROJECT_DIR$/.idea/CodeAcademyPHP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/Projektas.iml" filepath="$PROJECT_DIR$/.idea/Projektas.iml" />
     </modules>
   </component>
 </project>
