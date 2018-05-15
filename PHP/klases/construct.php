@@ -10,9 +10,9 @@ class asmuo {
         $this->par = $pr;
     }
      function getinfo(){
-        $s = "%s %s yra %s";
-        echo sprintf($s, $this->var, $this->pav, $this->par) . '<br>'; // paima savybes kur yra virsuj
-    }
+    $s = "%s %s yra %s";
+    echo sprintf($s, $this->var, $this->pav, $this->par) . '<br>'; // paima savybes kur yra virsuj
+}
 }
 
 $o = new asmuo('Petras', 'Petraitis', 'darbininkas');

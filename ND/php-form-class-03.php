@@ -32,7 +32,7 @@ Sukurti formą + php (viename faile - nereikia nurodyti formoje action), kuriame
         <label>Sąnaudų skaičiavimas</label>
         <div>
             <label><input name="kaip_skaiciuojamos_sanaudos"value="0" <?php if (isset($_POST['kaip_skaiciuojamos_sanaudos']) && $_POST['kaip_skaiciuojamos_sanaudos'] == '0') echo 'checked="checked"' ?> type="radio">   Faktiškai patirtos</label>
-            <label"><input name="kaip_skaiciuojamos_sanaudos" value="30"  <?php if ((isset($_POST['kaip_skaiciuojamos_sanaudos']) && $_POST['kaip_skaiciuojamos_sanaudos'] == '30') or !isset($_POST['kaip_skaiciuojamos_sanaudos'])) echo 'checked="checked"' ?> type="radio"> 30% nuo pajamų</label>
+            <label><input name="kaip_skaiciuojamos_sanaudos" value="30"  <?php if ((isset($_POST['kaip_skaiciuojamos_sanaudos']) && $_POST['kaip_skaiciuojamos_sanaudos'] == '30') or !isset($_POST['kaip_skaiciuojamos_sanaudos'])) echo 'checked="checked"' ?> type="radio"> 30% nuo pajamų</label>
         </div>
     </div>
     <div>
