@@ -12,16 +12,25 @@ class miestas {
         $this->gyventoju_skaicius = $g;
         $this->regionas = $r;
     }
-        function getinfo(){
-            $s = "Miestas: %s, gyventoju skaicius: %s, regionas: %s";
+        function info(){
+            $s = "%s %s %s";
             echo sprintf($s, $this->pavadinimas, $this->gyventoju_skaicius, $this->regionas) . '<br>'; // paima savybes kur yra virsuj
         }
     }
+class didelis extends miestas {
+    function info(){
+        $s = "Pavadinimas: %s, gyventoju skaicius: %s, regionas: %s (didelis miestas)";
+        echo sprintf($s, $this->pavadinimas, $this->gyventoju_skaicius, $this->regionas) . '<br>'; // paima savybes kur yra virsuj
+    }
+}
+class mazas extends miestas {
+    function info(){
+        $s = "Pavadinimas: %s, gyventoju skaicius: %s, regionas: %s";
+        echo sprintf($s, $this->pavadinimas, $this->gyventoju_skaicius, $this->regionas) . '<br>'; // paima savybes kur yra virsuj
+    }
+}
 
-
-$o = new miestas('Sakiai', 8000, 'Suvalkija');
-$o->getinfo();
-$o = new miestas('Kretinga', 15000, 'Zemaitija');
-$o->getinfo();
-$o = new miestas('Alytus', 7000, 'Dzukija');
-$o->getinfo();
+$o = new mazas('Sakiai', 8000, 'Suvalkija');
+$o->info();
+$o = new didelis('Kretinga', 15000, 'Zemaitija');
+$o->info();
