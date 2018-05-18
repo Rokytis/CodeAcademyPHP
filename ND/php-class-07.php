@@ -7,36 +7,30 @@ class asmuo {
     public $vardas;
     public $pavarde;
     public $amzius;
-    public $specialybe;
-    public $pareigos;
-    public $atlyginimas;
-    function __construct($vardas, $pavarde, $amzius, $specialybe, $pareigos, $atlyginimas){
+    function __construct($vardas, $pavarde, $amzius){
         $this->va = $vardas;
         $this->pa = $pavarde;
         $this->am = $amzius;
-        $this->sp = $specialybe;
-        $this->par = $pareigos;
-        $this->at = $atlyginimas;
     }
-    function info(){
+    function getinfo(){
         $s = "%s %s %s";
         echo sprintf($s, $this->va, $this->pa, $this->am) . '<br>'; // paima savybes kur yra virsuj
     }
 }
 class studentas extends asmuo {
-    function info(){
+    function info($sp){
         $s = "Studentas: %s  %s, amzius: %s, specialybe: %s";
-        echo sprintf($s, $this->va, $this->pa, $this->am, $this->sp) . '<br>'; // paima savybes kur yra virsuj
+        echo sprintf($s, $this->va, $this->pa, $this->am, $sp) . '<br>'; // paima savybes kur yra virsuj
     }
 }
 class darbuotojas extends asmuo {
-    function info(){
+    function info($par,  $at){
         $s = "Darbuotojas: %s %s, amzius: %s, pareigos: %s, atlyginimas: %s";
-        echo sprintf($s, $this->va, $this->pa, $this->am, $this->par,  $this->at) . '<br>'; // paima savybes kur yra virsuj
+        echo sprintf($s, $this->va, $this->pa, $this->am, $par,  $at) . '<br>'; // paima savybes kur yra virsuj
     }
 }
 
-$o = new studentas('Jonas', 'Jonaitis', 20, 'elektronika', '', '');
-$o->info();
-$o = new darbuotojas('Petras', 'Petraitis', 30, '', 'statybininkas', 800);
-$o->info();
+$o = new studentas('Jonas', 'Jonaitis', 20);
+$o->info('elektronika');
+$o = new darbuotojas('Petras', 'Petraitis', 30);
+$o->info('statybininkas', 800);
