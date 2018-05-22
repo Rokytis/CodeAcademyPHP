@@ -5,8 +5,8 @@ Sukurkite PHP skriptą, kuriame būtų aprašytas vienmatis masyvas iš 7 elemen
 $m = ['LABAS', 'RyTaS', 'Visiems', 'KAIP', 'sEKASI', 'JUMS', 'dIrBti'];
 var_dump($m);
 $i = 0;
-foreach($m as $a){
-    $m[$i] = strtolower( $m[$i]);
-    $i++;
+foreach($m as $x){
+    $m[$i++] = strtolower($x);
 }
+
 var_dump($m);

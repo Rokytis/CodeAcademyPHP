@@ -11,11 +11,8 @@ class dviratis {
         $this->m = $m;
         $this->k = $k;
     }
-    function getinfo(){
-        $s = "Gamintojas: %s<br> Modelis: %s<br> Kaina (eurais): %s";
-        echo sprintf($s, $this->g, $this->m, $this->k) . '<br>'; // paima savybes kur yra virsuj
-    }
 }
 
-$o = new dviratis('Unibike', 'Mountain bike', 200);
-$o->getinfo();
+$s = new dviratis('UniBike', 'Moteriškas', 1000);
+
+var_dump($s);

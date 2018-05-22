@@ -1,0 +1,23 @@
+<!--
+Sukurkite HTML dokumenta su įvedimo forma. Forma turėtu turėti laukus: 3x tekstiniai laukai: Prekės gamintojas, prekės pavadinimas, prekės kaina, 1x radio pasirinkimas (tipas): maistas, apranga, indai. Forma turi būti nusiųsta į backend PHP failą metodu POST. Backend faile  pridėkite įrašą į sesiją ir redirektinkite vartotoją atgal į įvedimo formos HTML dokumentą.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="11.php">
+    <label>Prekės gamintojas</label><input type="text" name="gam"><br>
+    <label>Prekės pavadinimas</label><input type="text" name="pav"><br>
+    <label>Prekės kaina (eurais)</label><input type="text" name="kai"><br>
+    <label>Tipas:</label>
+    <input type="radio" name="Tipas" value="Maistas"> <label>Maistas</label>
+    <input type="radio" name="Tipas" value="Apranga"><label>Apranga</label>
+    <input type="radio" name="Tipas" value="Indai"><label>Indai</label>
+    <br>
+    <input type="submit" value="Patvirtinti">
+</form>
+</body>
+</html>
