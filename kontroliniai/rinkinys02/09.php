@@ -12,24 +12,23 @@ class universitetas {
         $this->s = $s;
     }
     function info(){
-        $s = "%s%s%s";
-        echo sprintf($s, $this->p, $this->m, $this->s) . '<br>';
+        $s = "%s %s (%s)";
+        echo sprintf($s, $this->p, $this->m, $this->s);
     }
 }
-class standartinis extends universitetas {
-    function info(){
-        $s = "Pavadinimas: %s Miestas: %s Studentu skaicius: %s";
-        echo sprintf($s, $this->p, $this->m, $this->s) . '<br>';
-    }
-}
+$o = new universitetas('KTU', 'Kaunas', 6000);
+$o->info();
+echo '<br>';
+class standartinis extends universitetas {}
+$o = new standartinis('VDU', 'Kaunas', 7000);
+$o->info();
+echo '<br>';
 class technologinis extends universitetas {
     function info(){
-        $s = "Pavadinimas: %s Miestas: %s Studentu skaicius: %s - technologinis";
-        echo sprintf($s, $this->p, $this->m, $this->s) . '<br>';
+        $s = "%s %s (%s) - technologinis";
+        echo sprintf($s, $this->p, $this->m, $this->s);
     }
 }
 
 $o = new technologinis('KTU', 'Kaunas', 6000);
-$o->info();
-$o = new standartinis('VDU', 'Kaunas', 7000);
 $o->info();

@@ -7,5 +7,8 @@ var_dump($m);
 $i = 0;
 foreach($m as $a){
     $m[$i++] = strtoupper($a);
+    //$m[$i++] = strtolower($a); //mazosios
+   //$m[$i++] = ucfirst($a); //pirma didzioji
+    //$m[$i++] = ucfirst(strtolower($a));//pirma didzioji, kitos mazosios
 }
 var_dump($m);

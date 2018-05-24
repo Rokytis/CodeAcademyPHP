@@ -8,6 +8,6 @@ if (!isset($_SESSION['dviraciai'])) $_SESSION['dviraciai'] = [];
 
 $_SESSION['dviraciai'][] = $_POST;
 
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
-//header('location: 11.html');
+header('location: 11.html');

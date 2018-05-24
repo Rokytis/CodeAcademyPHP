@@ -2,20 +2,16 @@
 /**
 Sukurkite PHP skriptą, kuriame aprašykime klasę loto, kurioje būtų viena savybė - $kamuoliukai, kuri bus masyvas, taip pat būtų metodas insert($kamuoliukas), kuris prideda naują kamuoliuko numerį į masyvą sąvybę $kamuoliukai. Taip pat sukurkite metodą vid(), kuris grąžintų masyve sąvybėje esančių elementų matematinį vidurkį.
  */
-class loto
-{
+class loto{
     public $kamuoliukai = [];
 
-    function insert($kamuoliukas)
-    {
+    function insert($kamuoliukas){
         $this->kamuoliukai[] = $kamuoliukas;
     }
-
-    function vid()
-    {
+    function vid(){
         $suma = 0;
-        foreach ($this->kamuoliukai as $a) {
-            $suma += $a;
+        foreach ($this->kamuoliukai as $kamuoliukas) {
+            $suma += $kamuoliukas;
         }
         return $suma / count($this->kamuoliukai);
     }
